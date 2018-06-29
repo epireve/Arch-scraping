@@ -1,0 +1,1059 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">\\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx
+Table=`Sheet0$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="url" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_String" />
+            <Field name="Listing Item Title" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Listing Item Title_link" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_String" />
+            <Field name="Page Meta Item 1" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Page Meta Item 2" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_String" />
+            <Field name="Page Meta Item 3" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Page Meta Item 3_link" size="347" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_String" />
+            <Field name="Listing Item Block" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_String" />
+            <Field name="Listing Item Block_alt" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Page Meta Item 4" size="7094" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Page Meta Item 5" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Page Meta Item 5_link" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="210" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="url" selected="False" />
+            <SelectField field="Listing Item Title" selected="True" rename="CompanyName" />
+            <SelectField field="Listing Item Title_link" selected="False" />
+            <SelectField field="Page Meta Item 1" selected="True" rename="Address" />
+            <SelectField field="Page Meta Item 2" selected="True" rename="Details" />
+            <SelectField field="Page Meta Item 3" selected="False" />
+            <SelectField field="Page Meta Item 3_link" selected="False" />
+            <SelectField field="Listing Item Block" selected="False" />
+            <SelectField field="Listing Item Block_alt" selected="False" />
+            <SelectField field="Page Meta Item 4" selected="True" rename="About" />
+            <SelectField field="Page Meta Item 5" selected="False" />
+            <SelectField field="Page Meta Item 5_link" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Details" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_String" />
+            <Field name="About" size="7094" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="294" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\invoture\AppData\Local\Temp\Engine_1952_af71f108adce491f8661ef707b3d2963_\Engine_2280_58af4fd56e9c4463a4ce99db9e4a193b_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="306" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Details</Field>
+          <NumFields value="3" />
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>Details</RootName>
+          <Delimeters value=";" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Details" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_String" />
+            <Field name="About" size="7094" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Details1" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Details2" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Details3" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="390" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="//ReplaceChar(&quot;Tel: &quot;,&quot;&quot;,&quot;&quot;)&#xA;Trim([Details1],&quot;Tel: &quot;)" field="Details1" size="255" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Details1 = //ReplaceChar("Tel: ","","")
+Trim([Details1],"Tel: ")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Details" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_String" />
+            <Field name="About" size="7094" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Details1" size="255" source="Formula: //ReplaceChar(&quot;Tel: &quot;,&quot;&quot;,&quot;&quot;)&#xA;Trim([Details1],&quot;Tel: &quot;)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Details2" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Details3" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="498" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>About</Field>
+          <NumFields value="4" />
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>About</RootName>
+          <Delimeters value=";" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Details" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_String" />
+            <Field name="About" size="7094" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Details1" size="255" source="Formula: //ReplaceChar(&quot;Tel: &quot;,&quot;&quot;,&quot;&quot;)&#xA;Trim([Details1],&quot;Tel: &quot;)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Details2" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Details3" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from About" name="About1" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="About2" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="About3" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="About4" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="570" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Details" selected="False" />
+            <SelectField field="About" selected="False" />
+            <SelectField field="Details1" selected="True" rename="Phone" />
+            <SelectField field="Details2" selected="True" rename="Email" />
+            <SelectField field="Details3" selected="True" rename="Website" />
+            <SelectField field="About1" selected="True" rename="About" />
+            <SelectField field="About2" selected="True" rename="HousingExp" />
+            <SelectField field="About3" selected="True" rename="CommercialExp" />
+            <SelectField field="About4" selected="True" rename="OverseasExp" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Phone" size="255" source="Formula: //ReplaceChar(&quot;Tel: &quot;,&quot;&quot;,&quot;&quot;)&#xA;Trim([Details1],&quot;Tel: &quot;)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Email" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Website" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from About" name="About" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="HousingExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="CommercialExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="OverseasExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="78" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF Contains([HousingExp],&quot;More details about&quot;) &#xA;THEN Null() &#xA;ELSE [HousingExp] &#xA;ENDIF" field="HousingExp" size="7094" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>HousingExp = IF Contains([HousingExp],"More details about") 
+THEN Null() 
+ELSE [...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Phone" size="255" source="Formula: //ReplaceChar(&quot;Tel: &quot;,&quot;&quot;,&quot;&quot;)&#xA;Trim([Details1],&quot;Tel: &quot;)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Email" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Website" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from About" name="About" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="HousingExp" size="7094" source="Formula: IF Contains([HousingExp],&quot;More details about&quot;) &#xA;THEN Null() &#xA;ELSE [HousingExp] &#xA;ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="CommercialExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="OverseasExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="150" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF Contains([CommercialExp],&quot;More details about&quot;)&#xA;THEN Null() &#xA;ELSE [CommercialExp] &#xA;ENDIF" field="CommercialExp" size="7094" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CommercialExp = IF Contains([CommercialExp],"More details about")
+THEN Null() 
+E...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Phone" size="255" source="Formula: //ReplaceChar(&quot;Tel: &quot;,&quot;&quot;,&quot;&quot;)&#xA;Trim([Details1],&quot;Tel: &quot;)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Email" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Website" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from About" name="About" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="HousingExp" size="7094" source="Formula: IF Contains([HousingExp],&quot;More details about&quot;) &#xA;THEN Null() &#xA;ELSE [HousingExp] &#xA;ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="CommercialExp" size="7094" source="Formula: IF Contains([CommercialExp],&quot;More details about&quot;)&#xA;THEN Null() &#xA;ELSE [CommercialExp] &#xA;ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="OverseasExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="222" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF Contains([OverseasExp],&quot;More details about&quot;) &#xA;THEN Null() &#xA;ELSE [OverseasExp] &#xA;ENDIF" field="OverseasExp" size="7094" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>OverseasExp = IF Contains([OverseasExp],"More details about") 
+THEN Null() 
+ELSE...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Phone" size="255" source="Formula: //ReplaceChar(&quot;Tel: &quot;,&quot;&quot;,&quot;&quot;)&#xA;Trim([Details1],&quot;Tel: &quot;)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Email" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Website" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from About" name="About" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="HousingExp" size="7094" source="Formula: IF Contains([HousingExp],&quot;More details about&quot;) &#xA;THEN Null() &#xA;ELSE [HousingExp] &#xA;ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="CommercialExp" size="7094" source="Formula: IF Contains([CommercialExp],&quot;More details about&quot;)&#xA;THEN Null() &#xA;ELSE [CommercialExp] &#xA;ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="OverseasExp" size="7094" source="Formula: IF Contains([OverseasExp],&quot;More details about&quot;) &#xA;THEN Null() &#xA;ELSE [OverseasExp] &#xA;ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxCASSGui.CASSParse.CASSParse">
+        <Position x="354" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AddressField>Address</AddressField>
+          <LastLineField />
+          <Canadian value="False" />
+          <AllCandidates value="False" />
+          <OutputFields>
+            <OutputField field="CASSParse_CA_DeliveryInstallation" />
+            <OutputField field="CASSParse_CA_LockBox" />
+            <OutputField field="CASSParse_CA_RouteService" />
+            <OutputField field="CASSParse_City" />
+            <OutputField field="CASSParse_Garbage" />
+            <OutputField field="CASSParse_Plus4" />
+            <OutputField field="CASSParse_PostDirection" />
+            <OutputField field="CASSParse_PreDirection" />
+            <OutputField field="CASSParse_PrivateMailboxName" />
+            <OutputField field="CASSParse_PrivateMailboxNumber" />
+            <OutputField field="CASSParse_Range" />
+            <OutputField field="CASSParse_State" />
+            <OutputField field="CASSParse_StreetName" />
+            <OutputField field="CASSParse_Suffix" />
+            <OutputField field="CASSParse_SuiteName" />
+            <OutputField field="CASSParse_SuiteNumber" />
+            <OutputField field="CASSParse_Zip" />
+          </OutputFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxCASSEngine.dll" EngineDllEntryPoint="AlteryxCASSParse" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.CreatePoints.CreatePoints">
+        <Position x="342" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields fieldX="CompanyName" fieldY="CompanyName" />
+          <Mode>Double</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxCreatePoints" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="738" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Replace([Address],&quot; &quot;, &quot;+&quot;)&#xA;" field="AppendAddress" size="1073741823" type="V_WString" />
+            <FormulaField expression="&quot;https://maps.googleapis.com/maps/api/geocode/json?address=&quot;+[AppendAddress]" field="AppendAddress" size="1073741823" type="V_WString" />
+            <FormulaField expression="[AppendAddress]+&quot;&amp;components=country:UK&amp;key=AIzaSyAOJL4YNDyzG34SEbyg6MIedMSPcf8GTwI&quot;" field="AppendAddress" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>AppendAddress = Replace([Address]," ", "+")
+
+AppendAddress = "https://maps.googl...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Phone" size="255" source="Formula: //ReplaceChar(&quot;Tel: &quot;,&quot;&quot;,&quot;&quot;)&#xA;Trim([Details1],&quot;Tel: &quot;)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Email" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Website" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from About" name="About" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="HousingExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="CommercialExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="OverseasExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field name="AppendAddress" size="1073741823" source="Formula: [AppendAddress]+&quot;&amp;components=country:UK&amp;key=AIzaSyAOJL4YNDyzG34SEbyg6MIedMSPcf8GTwI&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+        <Position x="834" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <URLField>AppendAddress</URLField>
+          <OutputMode>String</OutputMode>
+          <CodePage>65001</CodePage>
+          <EncodeURLs value="True" />
+          <Headers>
+            <NameValues />
+            <Fields orderChanged="False">
+              <Field name="CompanyName" selected="False" />
+              <Field name="Address" selected="False" />
+              <Field name="Phone" selected="False" />
+              <Field name="Email" selected="False" />
+              <Field name="Website" selected="False" />
+              <Field name="About" selected="False" />
+              <Field name="HousingExp" selected="False" />
+              <Field name="CommercialExp" selected="False" />
+              <Field name="OverseasExp" selected="False" />
+              <Field name="AppendAddress" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </Fields>
+          </Headers>
+          <Payload>
+            <HTTPAction>GET</HTTPAction>
+            <QueryStringBodyMode>Compose</QueryStringBodyMode>
+            <ComposeNameValues />
+            <ComposeFields orderChanged="False">
+              <Field name="CompanyName" selected="False" />
+              <Field name="Address" selected="False" />
+              <Field name="Phone" selected="False" />
+              <Field name="Email" selected="False" />
+              <Field name="Website" selected="False" />
+              <Field name="About" selected="False" />
+              <Field name="HousingExp" selected="False" />
+              <Field name="CommercialExp" selected="False" />
+              <Field name="OverseasExp" selected="False" />
+              <Field name="AppendAddress" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </ComposeFields>
+          </Payload>
+          <UserName />
+          <Password />
+          <numConnections>2</numConnections>
+          <Timeout>600</Timeout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Phone" size="255" source="Formula: //ReplaceChar(&quot;Tel: &quot;,&quot;&quot;,&quot;&quot;)&#xA;Trim([Details1],&quot;Tel: &quot;)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Email" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Website" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from About" name="About" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="HousingExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="CommercialExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="OverseasExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field name="AppendAddress" size="1073741823" source="Formula: [AppendAddress]+&quot;&amp;components=country:UK&amp;key=AIzaSyAOJL4YNDyzG34SEbyg6MIedMSPcf8GTwI&quot;" type="V_WString" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+        <Position x="930" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JSON_Field>DownloadData</JSON_Field>
+          <IncludeInOutput value="False" />
+          <SingleField value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Phone" size="255" source="Formula: //ReplaceChar(&quot;Tel: &quot;,&quot;&quot;,&quot;&quot;)&#xA;Trim([Details1],&quot;Tel: &quot;)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Email" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Website" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from About" name="About" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="HousingExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="CommercialExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="OverseasExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field name="AppendAddress" size="1073741823" source="Formula: [AppendAddress]+&quot;&amp;components=country:UK&amp;key=AIzaSyAOJL4YNDyzG34SEbyg6MIedMSPcf8GTwI&quot;" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueInt" source="JSONParse: " type="Int64" />
+            <Field name="JSON_ValueFloat" source="JSONParse: " type="Double" />
+            <Field name="JSON_ValueBool" source="JSONParse: " type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1002" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>Contains([JSON_Name],"geometry.location.lat") OR
+Contains([JSON_Name],"geometry.location.lng") OR
+Contains([JSON_Name],"address_components.3.long_name") OR
+Contains([JSON_Name],"address_components.4.long_name") OR
+Contains([JSON_Name],"results.0.formatted_address")</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-06-29 08:02:34</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-06-29 08:02:34</StartDate>
+              <EndDate>2018-06-29 08:02:34</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([JSON_Name],"geometry.location.lat") OR
+Contains([JSON_Name],"geometry....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Phone" size="255" source="Formula: //ReplaceChar(&quot;Tel: &quot;,&quot;&quot;,&quot;&quot;)&#xA;Trim([Details1],&quot;Tel: &quot;)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Email" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Website" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from About" name="About" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="HousingExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="CommercialExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="OverseasExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field name="AppendAddress" size="1073741823" source="Formula: [AppendAddress]+&quot;&amp;components=country:UK&amp;key=AIzaSyAOJL4YNDyzG34SEbyg6MIedMSPcf8GTwI&quot;" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueInt" source="JSONParse: " type="Int64" />
+            <Field name="JSON_ValueFloat" source="JSONParse: " type="Double" />
+            <Field name="JSON_ValueBool" source="JSONParse: " type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Phone" size="255" source="Formula: //ReplaceChar(&quot;Tel: &quot;,&quot;&quot;,&quot;&quot;)&#xA;Trim([Details1],&quot;Tel: &quot;)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Email" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Website" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from About" name="About" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="HousingExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="CommercialExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="OverseasExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field name="AppendAddress" size="1073741823" source="Formula: [AppendAddress]+&quot;&amp;components=country:UK&amp;key=AIzaSyAOJL4YNDyzG34SEbyg6MIedMSPcf8GTwI&quot;" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueInt" source="JSONParse: " type="Int64" />
+            <Field name="JSON_ValueFloat" source="JSONParse: " type="Double" />
+            <Field name="JSON_ValueBool" source="JSONParse: " type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1158" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="CompanyName" />
+            <Field field="Address" />
+            <Field field="Phone" />
+            <Field field="Email" />
+            <Field field="Website" />
+            <Field field="About" />
+            <Field field="HousingExp" />
+            <Field field="CommercialExp" />
+            <Field field="OverseasExp" />
+          </GroupFields>
+          <HeaderField field="JSON_Name" />
+          <DataField field="JSON_ValueString" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="CrossTab:Group:Concat:" type="V_WString" />
+            <Field name="Address" size="255" source="CrossTab:Group:Concat:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Phone" size="255" source="CrossTab:Group:Concat:" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Email" size="255" source="CrossTab:Group:Concat:" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Website" size="255" source="CrossTab:Group:Concat:" type="V_String" />
+            <Field description="TextToColumns: Parsed from About" name="About" size="7094" source="CrossTab:Group:Concat:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="HousingExp" size="7094" source="CrossTab:Group:Concat:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="CommercialExp" size="7094" source="CrossTab:Group:Concat:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="OverseasExp" size="7094" source="CrossTab:Group:Concat:" type="V_WString" />
+            <Field name="results_0_address_components_3_long_name" size="2048" source="CrossTab:Header:JSON_Name:results.0.address_components.3.long_name:Concat:" type="V_WString" />
+            <Field name="results_0_address_components_4_long_name" size="2048" source="CrossTab:Header:JSON_Name:results.0.address_components.4.long_name:Concat:" type="V_WString" />
+            <Field name="results_0_formatted_address" size="2048" source="CrossTab:Header:JSON_Name:results.0.formatted_address:Concat:" type="V_WString" />
+            <Field name="results_0_geometry_location_lat" size="2048" source="CrossTab:Header:JSON_Name:results.0.geometry.location.lat:Concat:" type="V_WString" />
+            <Field name="results_0_geometry_location_lng" size="2048" source="CrossTab:Header:JSON_Name:results.0.geometry.location.lng:Concat:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="CompanyName" order="Asc" />
+            <Field field="Address" order="Asc" />
+            <Field field="Phone" order="Asc" />
+            <Field field="Email" order="Asc" />
+            <Field field="Website" order="Asc" />
+            <Field field="About" order="Asc" />
+            <Field field="HousingExp" order="Asc" />
+            <Field field="CommercialExp" order="Asc" />
+            <Field field="OverseasExp" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1086" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[JSON_ValueString]+ToString([JSON_ValueFloat])" field="JSON_ValueString" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[JSON_ValueString = [JSON_ValueString]+ToString([JSON_ValueFloat])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field name="Address" size="255" source="File: \\Mac\Home\Downloads\find-an-architect.architecture.com-(Crawl-Run)---2018-06-29T025723Z.xlsx|||`Sheet0$`" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Phone" size="255" source="Formula: //ReplaceChar(&quot;Tel: &quot;,&quot;&quot;,&quot;&quot;)&#xA;Trim([Details1],&quot;Tel: &quot;)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Email" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Website" size="255" source="TextToColumns: Parsed from Details" type="V_String" />
+            <Field description="TextToColumns: Parsed from About" name="About" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="HousingExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="CommercialExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="OverseasExp" size="7094" source="TextToColumns: Parsed from About" type="V_WString" />
+            <Field name="AppendAddress" size="1073741823" source="Formula: [AppendAddress]+&quot;&amp;components=country:UK&amp;key=AIzaSyAOJL4YNDyzG34SEbyg6MIedMSPcf8GTwI&quot;" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="Formula: [JSON_ValueString]+ToString([JSON_ValueFloat])" type="V_WString" />
+            <Field name="JSON_ValueInt" source="JSONParse: " type="Int64" />
+            <Field name="JSON_ValueFloat" source="JSONParse: " type="Double" />
+            <Field name="JSON_ValueBool" source="JSONParse: " type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings>
+        <Position x="1242" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"Phone","Email","Website"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">True</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output26">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="Address" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Phone" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Email" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Website" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from About" name="About" size="7094" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="HousingExp" size="7094" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="CommercialExp" size="7094" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="OverseasExp" size="7094" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="results_0_address_components_3_long_name" size="2048" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="results_0_address_components_4_long_name" size="2048" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="results_0_formatted_address" size="2048" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="results_0_geometry_location_lat" size="2048" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="results_0_geometry_location_lng" size="2048" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.CreatePoints.CreatePoints">
+        <Position x="1314" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields fieldX="results_0_geometry_location_lng" fieldY="results_0_geometry_location_lat" />
+          <Mode>Double</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="Address" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Phone" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Email" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Website" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from About" name="About" size="7094" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="HousingExp" size="7094" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="CommercialExp" size="7094" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="OverseasExp" size="7094" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="results_0_address_components_3_long_name" size="2048" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="results_0_address_components_4_long_name" size="2048" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="results_0_formatted_address" size="2048" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="results_0_geometry_location_lat" size="2048" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="results_0_geometry_location_lng" size="2048" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="Centroid" size="2147483647" source="CreatePoints: x=results_0_geometry_location_lng y=results_0_geometry_location_lat" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxCreatePoints" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1374" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CompanyName" selected="True" />
+            <SelectField field="Address" selected="True" />
+            <SelectField field="Email" selected="True" />
+            <SelectField field="Phone" selected="True" />
+            <SelectField field="Website" selected="True" />
+            <SelectField field="About" selected="True" />
+            <SelectField field="results_0_address_components_3_long_name" selected="True" rename="County" />
+            <SelectField field="results_0_address_components_4_long_name" selected="True" rename="State" />
+            <SelectField field="results_0_geometry_location_lng" selected="True" rename="Lng" />
+            <SelectField field="results_0_geometry_location_lat" selected="True" rename="Lat" />
+            <SelectField field="results_0_formatted_address" selected="True" rename="FormattedAddress" />
+            <SelectField field="HousingExp" selected="True" />
+            <SelectField field="CommercialExp" selected="True" />
+            <SelectField field="OverseasExp" selected="True" />
+            <SelectField field="Centroid" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CompanyName" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="Address" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Details" name="Email" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Phone" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Details" name="Website" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from About" name="About" size="7094" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="County" size="2048" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="State" size="2048" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="Lng" size="2048" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="Lat" size="2048" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field name="FormattedAddress" size="2048" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="HousingExp" size="7094" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="CommercialExp" size="7094" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+            <Field description="TextToColumns: Parsed from About" name="OverseasExp" size="7094" source="Formula: IF [_CurrentFieldName_] IN(&quot;Phone&quot;,&quot;Email&quot;,&quot;Website&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1506" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">\\Mac\Home\Documents\Data Science for Intan\FindAnArchitect.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>FindAnArchitect.xlsx
+Table=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="True" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="21" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output26" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Find An Architect</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (24)</Name>
+          <ToolId value="24" />
+          <Questions />
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="3" Selected="False" />
+        <Tool ToolId="11" Selected="True" />
+        <Tool ToolId="21" Selected="True" />
+        <Tool ToolId="25" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
